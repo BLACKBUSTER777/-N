@@ -1,0 +1,57 @@
+﻿<Page x:Class="Complex_Interface_WPF.CalculatorPolarDeg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Complex_Interface_WPF"
+      mc:Ignorable="d"
+      Title="CalculatorPolarDeg" Height="642" Width="969">
+
+    <Grid Background="White">
+        <Label Content="Число 1" HorizontalAlignment="Left" Margin="21,112,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontSize="24" Foreground="#FF939CA3" FontWeight="Bold"/>
+        <Label Content="Число 2" HorizontalAlignment="Left" Margin="21,190,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontSize="24" Foreground="#FF939CA3" FontWeight="Bold"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="56" Margin="226,99,0,0" VerticalAlignment="Top" Width="140" BorderBrush="#FFFEC5BB" CornerRadius="5">
+            <TextBox Name="Num1_RDeg_TB" HorizontalAlignment="Center" Height="56" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="140" FontFamily="Segoe UI Variable Display" FontSize="40" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        </Border>
+        <Label Content="r =" HorizontalAlignment="Left" Height="78" Margin="158,95,0,0" VerticalAlignment="Top" Width="84" FontSize="40" FontFamily="Segoe UI Variable Display"/>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="167,314,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button Name="AddPolarDeg" Content="+" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="579,314,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="DivPolarDeg" Content="/" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="443,314,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="MultPolarDeg" Content="×" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="305,314,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="SubPolarDeg" Content="-" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Label Content="Результат:" HorizontalAlignment="Left" Margin="21,440,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+        <Label Content="z =" HorizontalAlignment="Left" Height="64" Margin="155,500,0,0" VerticalAlignment="Top" Width="65" FontSize="40" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+        <TextBox Name="ResultPolarDeg_TB" HorizontalAlignment="Left" Height="Auto" Margin="225,509,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" FontFamily="Segoe UI Variable Display" FontSize="40" FontWeight="Bold"/>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="3" HorizontalAlignment="Left" Height="104" Margin="712,314,0,0" VerticalAlignment="Top" Width="110">
+            <Button x:Name="RestartPolarDeg" Content="↺" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="90" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+        </Border>
+        <Label Content="Операции:" HorizontalAlignment="Left" Margin="21,255,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="56" Margin="576,99,0,0" VerticalAlignment="Top" Width="140" BorderBrush="#FFFEC5BB" CornerRadius="5">
+            <TextBox x:Name="Num1_CosDeg_TB" HorizontalAlignment="Center" Height="56" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="140" FontFamily="Segoe UI Variable Display" FontSize="40" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        </Border>
+        <Label Content="angle =" HorizontalAlignment="Left" Height="72" Margin="406,97,0,0" VerticalAlignment="Top" Width="140" FontSize="40" FontFamily="Segoe UI Variable Display"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="56" Margin="226,177,0,0" VerticalAlignment="Top" Width="140" BorderBrush="#FFFEC5BB" CornerRadius="5">
+            <TextBox x:Name="Num2_RDeg_TB" HorizontalAlignment="Center" Height="56" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="140" FontFamily="Segoe UI Variable Display" FontSize="40" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        </Border>
+        <Label Content="r =" HorizontalAlignment="Left" Height="78" Margin="158,173,0,0" VerticalAlignment="Top" Width="84" FontSize="40" FontFamily="Segoe UI Variable Display"/>
+        <Label Content="angle =" HorizontalAlignment="Left" Height="74" Margin="406,168,0,0" VerticalAlignment="Top" Width="147" FontSize="40" FontFamily="Segoe UI Variable Display"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="56" Margin="576,177,0,0" VerticalAlignment="Top" Width="140" BorderBrush="#FFFEC5BB" CornerRadius="5">
+            <TextBox x:Name="Num2_CosDeg_TB" HorizontalAlignment="Center" Height="56" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="140" FontFamily="Segoe UI Variable Display" FontSize="40" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        </Border>
+        <Border BorderBrush="#FFF8EDEB" BorderThickness="1" HorizontalAlignment="Center" Height="62" Margin="0,18,0,0" VerticalAlignment="Top" Width="875" CornerRadius="10" Background="#FFF8EDEB">
+            <TextBlock Height="62" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Segoe UI Variable Display" FontSize="20" HorizontalAlignment="Center" Width="865"><Run Text="Введи радиус"/><Run Text="(r) "/><Run Text="и угол("/><Run Text="angle), "/><Run Text="где "/><Run Text="angle"/><Run Text=" "/><Run Text="в "/><Run Text="градусах"/><Run Text="."/><Run Text=" Мы не используем отдельный калькулятор для"/><Run Language="ru-ru" Text=" экспоненциальной формы, так это просто другая запись для полярной системы."/><Run Text=" "/><Run Text=" "/><LineBreak/><Run/><LineBreak/><Run Text="   "/></TextBlock>
+        </Border>
+
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Page x:Class="Complex_Interface_WPF.CalculatorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Complex_Interface_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="685" d:DesignWidth="900"
+      Title="CalculatorPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="118*"/>
+        </Grid.RowDefinitions>
+        <Menu HorizontalAlignment="Center" Height="72" VerticalAlignment="Top" Width="900" Background="{x:Null}" Margin="0,10,0,0">
+            <Button Name="OpenDescartes" Content="Декартова система" HorizontalAlignment="Left" Height="65" VerticalAlignment="Center" Width="284" BorderBrush="#FFFEC5BB" BorderThickness="0,0,0,3" Background="{x:Null}" FontFamily="Segoe UI Variable Display Semibold" FontSize="20" Click="OpenDescartes_Click"/>
+            <Button Name="OpenPolarDeg" Content="Полярная (градусы)" HorizontalAlignment="Left" Height="65" VerticalAlignment="Center" Width="284" BorderBrush="#FFFEC5BB" BorderThickness="0,0,0,3" Background="{x:Null}" FontFamily="Segoe UI Variable Display Semibold" FontSize="20" Click="OpenPolarDeg_Click"/>
+            <Button Name="OpenPolarRad" Content="Полярная (радианы)" HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="284" BorderBrush="#FFFEC5BB" BorderThickness="0,0,0,3" Background="{x:Null}" FontFamily="Segoe UI Variable Display Semibold" FontSize="20" Click="OpenPolarRad_Click"/>
+        </Menu>
+        <Frame Name="CalcFrame" Content="" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" Height="590" VerticalAlignment="Center" Width="900" Grid.Row="1"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,49 @@
+﻿<Page x:Class="Complex_Interface_WPF.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Complex_Interface_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="685" d:DesignWidth="900"
+      Title="Page2">
+
+    <Grid Background="White">
+        <Label Content="Калькулятор" HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="283"  BorderBrush="#FFFEC5BB" BorderThickness="0,0,0,3" FontFamily="Segoe UI Variable Display Semibold" FontSize="36"/>
+        <Label Content="Число 1" HorizontalAlignment="Left" Margin="46,123,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+        <Label Content="Число 2" HorizontalAlignment="Left" Margin="45,228,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="85" Margin="282,101,0,0" VerticalAlignment="Top" Width="583" BorderBrush="#FFFEC5BB" CornerRadius="5">
+            <TextBox Name="Num1_TB" HorizontalAlignment="Center" Height="85" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="582" FontFamily="Segoe UI Variable Display" FontSize="50" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="5" BorderThickness="1" HorizontalAlignment="Left" Height="85" Margin="282,215,0,0" VerticalAlignment="Top" Width="583">
+            <TextBox Name ="Num2_TB" HorizontalAlignment="Center" Height="85" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="582" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" FontSize="50" FontFamily="Segoe UI Variable Display"/>
+        </Border>
+        <Label Content="z =" HorizontalAlignment="Left" Height="78" Margin="194,101,0,0" VerticalAlignment="Top" Width="84" FontSize="50" FontFamily="Segoe UI Variable Display"/>
+        <Label Content="z =" HorizontalAlignment="Left" Height="78" Margin="194,215,0,0" VerticalAlignment="Top" Width="83" FontSize="50" FontFamily="Segoe UI Variable Display"/>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="208,390,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button Name="Add" Content="+" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold" Click="Add_Click"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="620,390,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="Div" Content="/" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="484,390,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="Mult" Content="×" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="1" HorizontalAlignment="Left" Height="104" Margin="346,390,0,0" VerticalAlignment="Top" Width="110" Background="#FFFEC5BB">
+            <Button x:Name="Sub" Content="-" HorizontalAlignment="Center" Height="84" VerticalAlignment="Center" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="48" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Label Content="Результат:" HorizontalAlignment="Left" Margin="45,515,0,0" VerticalAlignment="Top" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+        <Label Content="z =" HorizontalAlignment="Left" Height="94" Margin="45,562,0,0" VerticalAlignment="Top" Width="97" FontSize="50" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+        <TextBox Name="Result_TB" HorizontalAlignment="Left" Height="89" Margin="142,567,0,0" TextWrapping="Wrap" Text="Result (delete this)" VerticalAlignment="Top" Width="656" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" FontFamily="Segoe UI Variable Display" FontSize="50" FontWeight="Bold"/>
+        <Border BorderBrush="#FFFEC5BB" CornerRadius="20" BorderThickness="3" HorizontalAlignment="Left" Height="55" Margin="796,22,0,0" VerticalAlignment="Top" Width="64">
+            <Button x:Name="Restart" Content="↺" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="82" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="Segoe UI Variable Display" FontWeight="Bold"/>
+
+        </Border>
+        <Label Content="Операции:" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Width="143" FontFamily="Segoe UI Variable Display" FontWeight="Bold" FontSize="24" Foreground="#FF939CA3"/>
+
+    </Grid>
+</Page>

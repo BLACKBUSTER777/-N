@@ -1,0 +1,21 @@
+﻿<Page x:Class="Complex_Interface_WPF.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Complex_Interface_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="685" d:DesignWidth="900"
+      Title="Page1">
+
+    <Grid Background="White">
+        <Label Content="Выбор системы" HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="283"  BorderBrush="#FFFEC5BB" BorderThickness="0,0,0,3" FontFamily="Segoe UI Variable Display Semibold" FontSize="36"/>
+        <RadioButton Name="Descartes_RB" Content="Декартова система координат" HorizontalAlignment="Left" Margin="84,237,0,0" VerticalAlignment="Top" Width="503" Height="46" FontSize="30" FontFamily="Segoe UI Variable Display"/>
+        <RadioButton Name="PolarDeg_RB" Content="Полярная система координат (градусы)" HorizontalAlignment="Left" Margin="84,288,0,0" VerticalAlignment="Top" Width="565" Height="40" Checked="RadioButton_Checked" FontFamily="Segoe UI Variable Display" FontSize="30"/>
+        <Border BorderBrush="#FFF8EDEB" BorderThickness="1" HorizontalAlignment="Left" Height="123" Margin="84,516,0,0" VerticalAlignment="Top" Width="748" CornerRadius="10" Background="#FFF8EDEB">
+            <TextBlock HorizontalAlignment="Center" Height="123" TextWrapping="Wrap" VerticalAlignment="Center" Width="748" FontFamily="Segoe UI Variable Display" FontSize="20"><Run Language="ru-ru" Text="  Справка."/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run Language="ru-ru" Text="  В декартовой системе комплексные числа имеют вид "/><Run Text="z = x + iy"/><LineBreak/><Run Language="ru-ru" Text="  В полярной системы комплексные числа имеют вид z = r(cos⁡θ + isin⁡θ)"/></TextBlock>
+        </Border>
+        <RadioButton x:Name="PolarRad_RB" Content="Полярная система координат (радиусы)" HorizontalAlignment="Left" Margin="84,333,0,0" VerticalAlignment="Top" Width="625" Height="40" Checked="RadioButton_Checked" FontFamily="Segoe UI Variable Display" FontSize="30"/>
+
+    </Grid>
+</Page>
